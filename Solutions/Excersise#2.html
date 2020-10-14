@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        div {
+          width: 200px;
+          height: 200px;
+          border: 5px solid black;
+          margin: 10px;
+          background-color: blue;
+          text-align: center;
+        }
+        </style>
+        </head>
+<body>
+
+
+
+<div id="change-color" onclick="click1();"><h2 style="color: white;">Press Here to become RED</h2></div>
+<div id="change-color" onclick=" click2();"><h2 style="color: white;">Press Here to become Green</h2></div>
+<div id="change-color" onclick=" click3();"><h2  style="color: white;">Press Here to become Yellow</h2></div>
+<div id="change-color" onclick=" click4();"><h2  style="color: white;">Press Here to become Blue Again</h2></div>
+
+<script>
+function click1() {
+  document.getElementById("change-color").style.backgroundColor = "red";
+}
+
+function click2() {
+  document.getElementById("change-color").style.backgroundColor = "green";
+}
+function click3() {
+  document.getElementById("change-color").style.backgroundColor = "yellow";
+}
+function click4() {
+  document.getElementById("change-color").style.backgroundColor = "blue";
+}
+</script>
+
+</body>
+</html>
