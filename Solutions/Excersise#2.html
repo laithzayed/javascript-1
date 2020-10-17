@@ -16,24 +16,27 @@
 
 
 
-<div id="change-color" onclick="click1();"><h2 style="color: white;">Press Here to become RED</h2></div>
-<div id="change-color" onclick=" click2();"><h2 style="color: white;">Press Here to become Green</h2></div>
-<div id="change-color" onclick=" click3();"><h2  style="color: white;">Press Here to become Yellow</h2></div>
-<div id="change-color" onclick=" click4();"><h2  style="color: white;">Press Here to become Blue Again</h2></div>
+<div id="change-color"></div>
+<p>Made In Love By: <span style="font-size:200%;color:red;">&hearts;</span> Laith Zayed</p>
 
 <script>
-function click1() {
-  document.getElementById("change-color").style.backgroundColor = "red";
-}
+  document.getElementById("change-color").style.backgroundColor="blue";
+  document.getElementById("change-color").addEventListener("click",colorChange)
 
-function click2() {
-  document.getElementById("change-color").style.backgroundColor = "green";
-}
-function click3() {
-  document.getElementById("change-color").style.backgroundColor = "yellow";
-}
-function click4() {
-  document.getElementById("change-color").style.backgroundColor = "blue";
+function colorChange() {
+ if( document.getElementById("change-color").style.backgroundColor == "blue"){
+   document.getElementById("change-color").style.backgroundColor="red"; 
+  
+  } else if(document.getElementById("change-color").style.backgroundColor=="red") {
+    document.getElementById("change-color").style.backgroundColor="green";
+  }
+
+  else {
+    document.getElementById("change-color").style.backgroundColor="blue";
+  }
+
+
+
 }
 </script>
 
